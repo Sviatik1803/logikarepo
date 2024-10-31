@@ -1,0 +1,142 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-section {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-section {
+    flex: 1;
+    background-color: #96AAA0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav a:first-child {
+    color: #666;
+}
+
+.download-btn {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    background: #000;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.name {
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact-info span {
+    color: #666;
+}
+
+.contact-info a {
+    color: #000;
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.social-links a {
+    color: #000;
+    text-decoration: none;
+}
+
+.full-resume {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #F0800C;
+    text-decoration: none;
+}
+
+.full-resume::after {
+    content: "↓";
+    font-size: 1.2em;
+}
+
+.profile-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    
+    .nav {
+        background: white;
+        padding: 1rem;
+    }
+    
+    .left-section {
+        padding-top: 5rem;
+    }
+    
+    .name {
+        font-size: 3rem;
+    }
+    
+    .right-section {
+        min-height: 400px;
+    }
+}
